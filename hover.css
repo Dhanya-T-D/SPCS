@@ -1,0 +1,146 @@
+/* General card styling */
+.card {
+    width: 220px;
+    height: 390px;
+    margin: 100px auto; /* Center the card horizontally */
+    background-color: #fdf8f7;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden; /* Hide overflowing elements */
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease; /* Smooth shadow effect */
+}
+
+.card:hover {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Card image styling */
+.card-img {
+    width: 190px;
+    height: 280px;
+    margin: 10px auto;
+    border-radius: 5px;
+    background-color: black;
+    overflow: hidden; /* Ensure image doesn't overflow */
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain image aspect ratio */
+}
+
+/* Card title styling */
+.card-txt1 {
+    margin-left: 10px;
+    text-align: left;
+}
+
+.card-txt1 h4 {
+    margin-top: 0;
+}
+
+/* Price section styling */
+.price {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    
+    width: 220px;
+    background-color: #ffffff;
+    z-index: 3;
+}
+
+.final-price {
+    font-size: 18px;
+}
+
+.org-price {
+    font-size: 15px;
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.disc {
+    font-size: 16px;
+    color: #ff0000;
+}
+
+/* div contains buttons */
+.buttons {
+    position: absolute;
+    bottom: -100px; /* Initially hidden below the card */
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease; /* Smooth transition effect adjust */
+    z-index: 1;
+}
+
+/* Reveal buttons on hover */
+.card:hover .buttons {
+    bottom: 50px; /* Move the buttons into view */
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Button section styling */
+.twbtn, .buy-btn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50%;
+}
+
+.cartbtn {
+    width: 66%;
+    height: 80%;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    background-image: url(grocery-store.png);
+    background-repeat: no-repeat;
+    background-position: 1em center;
+    background-size: 1rem;
+    font-weight: 700    ;
+}
+
+.bbtn {
+    width: 90%;
+    height: 80%;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    color: white;
+}
+
+.bkmrk {
+    width: 18%;
+    height: 80%;
+    background-color: white;
+
+    border: 2px solid black;
+    border-radius: 15%;
+    cursor: pointer;
+    background-image: url(bookmark.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1rem;
+}
+
+.buy-btn {
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
